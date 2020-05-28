@@ -1,0 +1,47 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo {
+  color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  background: asset-url('thought-catalog-505eectW54k-unsplash.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: darkgray;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
