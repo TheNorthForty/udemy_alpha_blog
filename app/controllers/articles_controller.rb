@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
   def create
     # must whitelist what will be allowed to interact with your code
     @article = Article.new(article_params)
-    @article.user = User.first
+    @article.user = current_user
     if @article.save
       flash[:notice] = "Article was created successfully"
       #redirect_to article_path(@article)
